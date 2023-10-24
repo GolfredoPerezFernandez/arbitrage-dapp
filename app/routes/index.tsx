@@ -1,3 +1,12 @@
+
+
+export const action = async ({request}) => {
+  
+  console.log(await request.json())
+
+  return {};
+}
+
 export default function Index() {
   return (
     <>
