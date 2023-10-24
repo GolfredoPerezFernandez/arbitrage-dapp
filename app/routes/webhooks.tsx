@@ -7,7 +7,10 @@ export const action: ActionFunction = async ({request}) => {
 
   try {
     const { data, _tagName, eventName }: any = parseEventData(request);
-    console.log(data);
+    console.log("data "+data);
+    console.log("eventName "+eventName);
+    console.log("_tagName "+_tagName);
+
     return null
   } catch(error) {
     console.log('errorStream', error)
