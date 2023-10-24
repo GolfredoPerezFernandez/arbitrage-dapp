@@ -1,8 +1,6 @@
+import {ActionFunction} from '@remix-run/node';
 
+export const action: ActionFunction = async ({request}) => {
+console.log(JSON.stringify(request))
 
-export const action = async ({request}) => {
-  
-  console.log(await request.json())
-
-  return {};
-}
+};
