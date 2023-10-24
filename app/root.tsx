@@ -73,7 +73,7 @@ export default function App() {
     const testChains = ENV.PUBLIC_ENABLE_TESTNETS === 'true' ? [goerli] : [];
 
     const { chains, publicClient } = configureChains(
-      [mainnet, polygon, optimism, arbitrum, base, zora, ...testChains],
+      [polygon],
       [publicProvider()]
     );
 
@@ -115,7 +115,6 @@ export default function App() {
                 <ConnectButton />
               </div>
             </RainbowKitProvider>
-            <Outlet />
           </WagmiConfig>
         ) : null}
         <ScrollRestoration />
