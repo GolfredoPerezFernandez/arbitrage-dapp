@@ -18,8 +18,9 @@ export const action: ActionFunction = async ({request}) => {
     const network =EvmChain.POLYGON;
   
     const response = await Moralis.EvmApi.transaction.getTransaction({
-      transactionHash,
-      network
+      "transactionHash":transactionHash,
+      "chain": "0x89",
+
     });
   
     console.log(response);
