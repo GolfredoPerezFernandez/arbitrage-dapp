@@ -114,6 +114,7 @@ export default function App() {
               >
                 <ConnectButton />
               </div>
+              <Outlet/>
             </RainbowKitProvider>
           </WagmiConfig>
         ) : null}
