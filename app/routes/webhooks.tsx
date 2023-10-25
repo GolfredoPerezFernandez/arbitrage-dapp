@@ -4,10 +4,7 @@ import { parseEventData } from '~/utils/parseEventData';
 export const action: ActionFunction = async ({request}) => {
 
   try {
-    const { data, _tagName, eventName }: any = parseEventData(request);
-    console.log("data "+data);
-    console.log("eventName "+eventName);
-    console.log("_tagName "+_tagName);
+    console.log("data "+request);
 
     return null
   } catch(error) {
