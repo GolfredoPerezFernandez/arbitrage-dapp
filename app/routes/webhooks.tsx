@@ -17,7 +17,7 @@ export const action: ActionFunction = async ({request}) => {
   
     const network =EvmChain.POLYGON;
   
-    const response = await Moralis.AptosApi.transactions.getTransactionByHash({
+    const response = await Moralis.EvmApi.transaction.getTransaction({
       transactionHash,
       network
     });
